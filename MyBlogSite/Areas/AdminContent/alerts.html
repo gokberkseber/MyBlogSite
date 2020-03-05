@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,10 +8,10 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="img/logo/logo.png" rel="icon">
-  <title>RuangAdmin - Dashboard</title>
+  <title>RuangAdmin - Alerts</title>
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/ruang-admin.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/ruang-admin.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -25,7 +25,7 @@
         <div class="sidebar-brand-text mx-3">RuangAdmin</div>
       </a>
       <hr class="sidebar-divider my-0">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -34,16 +34,17 @@
       <div class="sidebar-heading">
         Features
       </div>
-      <li class="nav-item">
+      <li class="nav-item  active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
           aria-expanded="true" aria-controls="collapseBootstrap">
           <i class="far fa-fw fa-window-maximize"></i>
           <span>Bootstrap UI</span>
         </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+        <div id="collapseBootstrap" class="collapse show" aria-labelledby="headingBootstrap"
+          data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Bootstrap UI</h6>
-            <a class="collapse-item" href="alerts.html">Alerts</a>
+            <a class="collapse-item  active" href="alerts.html">Alerts</a>
             <a class="collapse-item" href="buttons.html">Buttons</a>
             <a class="collapse-item" href="dropdowns.html">Dropdowns</a>
             <a class="collapse-item" href="modals.html">Modals</a>
@@ -300,312 +301,223 @@
         <!-- Container Fluid-->
         <div class="container-fluid" id="container-wrapper">
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <h1 class="h3 mb-0 text-gray-800">Alerts</h1>
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="./">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+              <li class="breadcrumb-item">
+                <a href="./">Home</a>
+              </li>
+              <li class="breadcrumb-item">Bootstrap UI</li>
+              <li class="breadcrumb-item active" aria-current="page">Alerts</li>
             </ol>
           </div>
-
-          <div class="row mb-3">
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
+          <div class="row">
+            <!-- Alerts Basic -->
+            <div class="col-lg-6">
+              <div class="card shadow-sm mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Alerts Basic</h6>
+                </div>
                 <div class="card-body">
-                  <div class="row align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Earnings (Monthly)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
-                        <span>Since last month</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-primary"></i>
-                    </div>
+                  <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                  </div>
+                  <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!</div>
+                  <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                  </div>
+                  <div class="alert alert-warning" role="alert">
+                    A simple warning alert—check it out!
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                  </div>
+                  <div class="alert alert-light" role="alert">
+                    A simple light alert—check it out!
+                  </div>
+                  <div class="alert alert-dark" role="alert">
+                    A simple dark alert—check it out!
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Earnings (Annual) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Sales</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">650</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 12%</span>
-                        <span>Since last years</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-shopping-cart fa-2x text-success"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- New User Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">New User</div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">366</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-success mr-2"><i class="fas fa-arrow-up"></i> 20.4%</span>
-                        <span>Since last month</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-users fa-2x text-info"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-uppercase mb-1">Pending Requests</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                      <div class="mt-2 mb-0 text-muted text-xs">
-                        <span class="text-danger mr-2"><i class="fas fa-arrow-down"></i> 1.10%</span>
-                        <span>Since yesterday</span>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-warning"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
+            <!-- Alerts with Dismissing -->
+            <div class="col-lg-6">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Monthly Recap Report</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
+                  <h6 class="m-0 font-weight-bold text-primary">Alerts with Dismissing</h6>
                 </div>
                 <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
+                  <div class="alert alert-primary alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple primary alert—check it out!
+                  </div>
+                  <div class="alert alert-secondary alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple secondary alert—check it out!
+                  </div>
+                  <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple success alert—check it out!
+                  </div>
+                  <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple danger alert—check it out!
+                  </div>
+                  <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple warning alert—check it out!
+                  </div>
+                  <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple info alert—check it out!
+                  </div>
+                  <div class="alert alert-light alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple light alert—check it out!
+                  </div>
+                  <div class="alert alert-dark alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    A simple dark alert—check it out!
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
+            <div class="col-lg-6">
+              <!-- Alerts with Icon -->
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Products Sold</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle btn btn-primary btn-sm" href="#" role="button" id="dropdownMenuLink"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Month <i class="fas fa-chevron-down"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Select Periode</div>
-                      <a class="dropdown-item" href="#">Today</a>
-                      <a class="dropdown-item" href="#">Week</a>
-                      <a class="dropdown-item active" href="#">Month</a>
-                      <a class="dropdown-item" href="#">This Year</a>
-                    </div>
-                  </div>
+                  <h6 class="m-0 font-weight-bold text-primary">Alert with icon</h6>
                 </div>
                 <div class="card-body">
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Oblong T-Shirt
-                      <div class="small float-right"><b>600 of 800 Items</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6><i class="fas fa-check"></i><b> Success!</b></h6>
+                    A simple success alert—check it out!
                   </div>
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Gundam 90'Editions
-                      <div class="small float-right"><b>500 of 800 Items</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6><i class="fas fa-ban"></i><b> Stop!</b></h6>
+                    A simple danger alert—check it out!
                   </div>
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Rounded Hat
-                      <div class="small float-right"><b>455 of 800 Items</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6><i class="fas fa-exclamation-triangle"></i><b> Warning!</b></h6>
+                    A simple warning alert—check it out!
                   </div>
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Indomie Goreng
-                      <div class="small float-right"><b>400 of 800 Items</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                  <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6><i class="fas fa-info"></i><b> Warning!</b></h6>
+                    A simple info alert—check it out!
                   </div>
-                  <div class="mb-3">
-                    <div class="small text-gray-500">Remote Control Car Racing
-                      <div class="small float-right"><b>200 of 800 Items</b></div>
-                    </div>
-                    <div class="progress" style="height: 12px;">
-                      <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer text-center">
-                  <a class="m-0 small text-primary card-link" href="#">View More <i
-                      class="fas fa-chevron-right"></i></a>
                 </div>
               </div>
-            </div>
-            <!-- Invoice Example -->
-            <div class="col-xl-8 col-lg-7 mb-4">
-              <div class="card">
+              <!-- Additional Content -->
+              <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Invoice</h6>
-                  <a class="m-0 float-right btn btn-danger btn-sm" href="#">View More <i
-                      class="fas fa-chevron-right"></i></a>
+                  <h6 class="m-0 font-weight-bold text-primary">Additional Content</h6>
                 </div>
-                <div class="table-responsive">
-                  <table class="table align-items-center table-flush">
-                    <thead class="thead-light">
-                      <tr>
-                        <th>Order ID</th>
-                        <th>Customer</th>
-                        <th>Item</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td><a href="#">RA0449</a></td>
-                        <td>Udin Wayang</td>
-                        <td>Nasi Padang</td>
-                        <td><span class="badge badge-success">Delivered</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">RA5324</a></td>
-                        <td>Jaenab Bajigur</td>
-                        <td>Gundam 90' Edition</td>
-                        <td><span class="badge badge-warning">Shipping</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">RA8568</a></td>
-                        <td>Rivat Mahesa</td>
-                        <td>Oblong T-Shirt</td>
-                        <td><span class="badge badge-danger">Pending</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">RA1453</a></td>
-                        <td>Indri Junanda</td>
-                        <td>Hat Rounded</td>
-                        <td><span class="badge badge-info">Processing</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">RA1998</a></td>
-                        <td>Udin Cilok</td>
-                        <td>Baby Powder</td>
-                        <td><span class="badge badge-success">Delivered</span></td>
-                        <td><a href="#" class="btn btn-sm btn-primary">Detail</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="card-body">
+                  <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p>
+                      Aww yeah, you successfully read this important alert message. This example
+                      text is going to run a bit longer so that you can see how spacing within an
+                      alert works with this kind of content.
+                    </p>
+                    <hr>
+                    <p class="mb-0">
+                      Whenever you need to, be sure to use margin utilities to keep things nice
+                      and tidy.
+                    </p>
+                  </div>
                 </div>
-                <div class="card-footer"></div>
               </div>
             </div>
-            <!-- Message From Customer-->
-            <div class="col-xl-4 col-lg-5 ">
-              <div class="card">
-                <div class="card-header py-4 bg-primary d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-light">Message From Customer</h6>
+            <div class="col-lg-6">
+              <div class="card mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Alert with link</h6>
                 </div>
-                <div>
-                  <div class="customer-message align-items-center">
-                    <a class="font-weight-bold" href="#">
-                      <div class="text-truncate message-title">Hi there! I am wondering if you can help me with a
-                        problem I've been having.</div>
-                      <div class="small text-gray-500 message-time font-weight-bold">Udin Cilok · 58m</div>
-                    </a>
+                <div class="card-body">
+                  <div class="alert alert-primary" role="alert">
+                    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
                   </div>
-                  <div class="customer-message align-items-center">
-                    <a href="#">
-                      <div class="text-truncate message-title">But I must explain to you how all this mistaken idea
-                      </div>
-                      <div class="small text-gray-500 message-time">Nana Haminah · 58m</div>
-                    </a>
+                  <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
                   </div>
-                  <div class="customer-message align-items-center">
-                    <a class="font-weight-bold" href="#">
-                      <div class="text-truncate message-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                      </div>
-                      <div class="small text-gray-500 message-time font-weight-bold">Jajang Cincau · 25m</div>
-                    </a>
+                  <div class="alert alert-success" role="alert">
+                    A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
                   </div>
-                  <div class="customer-message align-items-center">
-                    <a class="font-weight-bold" href="#">
-                      <div class="text-truncate message-title">At vero eos et accusamus et iusto odio dignissimos
-                        ducimus qui blanditiis
-                      </div>
-                      <div class="small text-gray-500 message-time font-weight-bold">Udin Wayang · 54m</div>
-                    </a>
+                  <div class="alert alert-danger" role="alert">
+                    A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
                   </div>
-                  <div class="card-footer text-center">
-                    <a class="m-0 small text-primary card-link" href="#">View More <i
-                        class="fas fa-chevron-right"></i></a>
+                  <div class="alert alert-warning" role="alert">
+                    A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                  </div>
+                  <div class="alert alert-info" role="alert">
+                    A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                    like.
+                  </div>
+                  <div class="alert alert-light" role="alert">
+                    A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                    like.
+                  </div>
+                  <div class="alert alert-dark" role="alert">
+                    A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                    like.
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--Row-->
-
+          <!-- Row -->
+          <!-- More Documentations Link -->
           <div class="row">
             <div class="col-lg-12 text-center">
-              <p>Do you like this template ? you can download from <a href="https://github.com/indrijunanda/RuangAdmin"
-                  class="btn btn-primary btn-sm" target="_blank"><i class="fab fa-fw fa-github"></i>&nbsp;GitHub</a></p>
+              <p>
+                For more documentations you can visit<a href="https://getbootstrap.com/docs/4.3/components/alerts/"
+                  target="_blank"> bootstrap alert documentations.</a>
+              </p>
             </div>
           </div>
-
+          <!-- More Documentations Link -->
         </div>
         <!---Container Fluid-->
       </div>
+
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
@@ -616,21 +528,17 @@
           </div>
         </div>
       </footer>
-      <!-- Footer -->
+
     </div>
   </div>
-
-  <!-- Scroll to top -->
+  <!-- Scrollto to top -->
   <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
   </a>
-
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="js/ruang-admin.min.js"></script>
-  <script src="vendor/chart.js/Chart.min.js"></script>
-  <script src="js/demo/chart-area-demo.js"></script>  
 </body>
 
 </html>
