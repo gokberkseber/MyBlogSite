@@ -1,0 +1,28 @@
+﻿@model MyBlogSite.Models.Etiket
+@{
+    ViewBag.Title = "EtiketGuncelle";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+
+
+@using (Html.BeginForm("EtiketGuncelle", "Etiket", FormMethod.Post))
+{
+    @Html.HiddenFor(k => k.EtiketID)
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Etiket Adı</label>
+                @Html.TextBoxFor(k => k.EtiketAdi, new { @class = "form-control" })
+
+                <button type="submit" class="btn btn-primary">
+                    Etiket Ekle
+                </button>
+            </div>
+
+        </div>
+    </div>
+}
+

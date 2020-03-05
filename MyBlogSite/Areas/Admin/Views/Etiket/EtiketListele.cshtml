@@ -1,0 +1,72 @@
+﻿@model IEnumerable<MyBlogSite.Models.Etiket>
+@{
+    ViewBag.Title = "EtiketListele";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+
+
+<div class="row">
+    <div class="col-lg-2">
+        <form method="post" action="/Admin/Etiket/EtiketEkle">
+            <input type="text" name="EtiketAdi" class="form-control"
+                   placeholder="Etiket Adı...">
+
+
+            <button type="submit" class="btn btn-primary" style="position: relative;
+
+      right: -255px;    top:-40px;">
+                Etiket Ekle
+            </button>
+
+
+
+
+        </form>
+    </div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-lg-12 mb-4">
+        <!-- Simple Tables -->
+        <div class="card">
+
+
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Etiket Adı</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (MyBlogSite.Models.Etiket etk in Model)
+                        {
+                            <tr>
+
+                                <td>@etk.EtiketAdi</td>
+                                <td>
+                                    <a href="/Admin/Etiket/EtiketSil/@etk.EtiketID" class="btn btn-outline-danger">Sil</a>
+                                    <a href="/Admin/Etiket/EtiketGuncelle/@etk.EtiketID" class="btn btn-outline-success">Guncelle</a>
+                                </td>
+
+                            </tr>
+                        }
+
+
+
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+</div>
+
+
