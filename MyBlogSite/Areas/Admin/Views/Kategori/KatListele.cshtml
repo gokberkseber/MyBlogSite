@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MyBlogSite.Models.Kategori>
+@{
+    ViewBag.Title = "KatListele";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+    <div class="row">
+        <div class="col-lg-2">
+            <form method="post" action="/Admin/Kategori/KategoriEkle">
+                <input type="text" name="KategoriAdi" class="form-control"
+                       placeholder="Kategori Adı...">
+                
+                 
+                        <button type="submit" class="btn btn-primary" style="position: relative;
+
+      right: -255px;    top:-40px;">Kategori Ekle</button>
+                   
+
+               
+               
+            </form>
+        </div>
+
+      
+    </div>
+
+<div class="row">
+    <div class="col-lg-12 mb-4">
+        <!-- Simple Tables -->
+        <div class="card">
+
+
+            <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Kategori Adı</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            @foreach (MyBlogSite.Models.Kategori kat in Model)
+                            {
+                        <tr>
+
+                            <td>@kat.KategoriAdi</td>
+                            <td>
+                                <a href="/Admin/Kategori/KatSil/@kat.KategoriID" class="btn btn-danger">Sil</a>
+                                <a href="/Admin/Kategori/KatGuncelle/@kat.KategoriID" class="btn btn-dark">Guncelle</a>
+                            </td>
+
+                        </tr>
+                            }
+
+                        
+
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="card-footer"></div>
+        </div>
+    </div>
+</div>
+

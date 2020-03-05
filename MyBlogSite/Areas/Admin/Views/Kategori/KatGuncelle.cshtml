@@ -1,0 +1,24 @@
+﻿@model MyBlogSite.Models.Kategori
+@{
+    ViewBag.Title = "KatGuncelle";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("KatGuncelle", "Kategori", FormMethod.Post))
+{
+    @Html.HiddenFor(k => k.KategoriID)
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                @Html.TextBoxFor(k => k.KategoriAdi, new { @class = "form-control" })
+
+                <button type="submit" class="btn btn-primary">
+                    Kategori Ekle
+                </button>
+            </div>
+
+        </div>
+    </div>
+}
