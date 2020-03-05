@@ -1,0 +1,13 @@
+﻿@model IEnumerable<MyBlogSite.Models.Kategori>
+
+
+
+    <div class="fh5co_tags_all">
+        @foreach (MyBlogSite.Models.Kategori kat in Model)
+        {
+            <a href="#" class="row pb-3">&nbsp;&nbsp; @kat.KategoriAdi</a>
+        }
+
+
+
+    </div>

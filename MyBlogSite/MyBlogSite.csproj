@@ -1930,7 +1930,8 @@
     <Content Include="Areas\AdminContent\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="Areas\AdminContent\vendor\jquery\jquery.min.map" />
     <Content Include="Areas\AdminContent\vendor\jquery\jquery.slim.min.map" />
-    <Content Include="Areas\Admin\Views\Kategori\KategoriEkle.cshtml" />
+    <Content Include="Areas\Admin\Views\Kategori\KatListele.cshtml" />
+    <Content Include="Areas\Admin\Views\Kategori\KatGuncelle.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -1947,6 +1948,7 @@
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1978,6 +1980,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\Kategori\KategoriWidget.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
