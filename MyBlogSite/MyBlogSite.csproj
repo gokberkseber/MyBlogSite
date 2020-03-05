@@ -1932,6 +1932,8 @@
     <Content Include="Areas\AdminContent\vendor\jquery\jquery.slim.min.map" />
     <Content Include="Areas\Admin\Views\Kategori\KatListele.cshtml" />
     <Content Include="Areas\Admin\Views\Kategori\KatGuncelle.cshtml" />
+    <Content Include="Areas\Admin\Views\Etiket\EtiketListele.cshtml" />
+    <Content Include="Areas\Admin\Views\Etiket\EtiketGuncelle.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -1946,6 +1948,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\EtiketController.cs" />
     <Compile Include="Areas\Admin\Controllers\KategoriController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
